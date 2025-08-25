@@ -12,6 +12,11 @@ pipeline {
                 sh 'echo Building...'
             }
         }
+        stage('Scan') {
+            steps {
+                echo " vulnerability Scanning"
+            }
+        }
         stage('Test') {
             steps {
                 sh 'echo Testing...'
